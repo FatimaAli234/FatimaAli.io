@@ -36,7 +36,7 @@ window.addEventListener('scroll',function(){
 
 //Reviews section
 
-//intialize the slideindex to 1
+//Intialize the slideindex to 1
 var slideIndex = 1;
 showSlides(slideIndex);
 
