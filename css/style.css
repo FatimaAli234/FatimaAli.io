@@ -606,7 +606,7 @@ h2{
 /*styling for form labels*/
 .appointment label{
     display:inline-block;/*display labels inline*/
-    width: 130px;/*width of labels*/
+    width: 130px;/*width of label*/
 }
 
 /*styling for form inputs*/
