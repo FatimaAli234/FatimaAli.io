@@ -1,0 +1,684 @@
+
+/*services page styling*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color:black;
+   
+}
+
+/*vertical heading styling*/
+.vertical h1 {
+    text-orientation:sideways;
+    writing-mode: vertical-rl;
+     margin: 0 ;
+     margin-left: -2%;/*margin to position vertiaclly*/
+    font-size: 148px;
+    position: relative;/*relative positioning*/
+    display: inline-block;/*display inline*/
+    color: #f0f0f0;
+    font-family: "josefin",sans-serif;
+    
+}
+
+/*stylist services section styling*/
+.stylist-services{
+   margin-left:20% ;
+   margin-top: -47%;
+   position: relative;
+
+}
+/*stylist services section heading 2 styling*/
+.stylist-services h2{
+    font-family: "josefin",sans-serif;
+    color:whitesmoke;
+    font-size: 30px;
+    position: relative;
+    border-bottom: 2px solid grey;
+    width: 25%;
+    padding-bottom: 10px;
+}
+
+/*span styling*/
+.stylist-services h2 span{
+    color: grey; 
+    font-size: 15px; 
+    font-family: "Kaushan Script", cursive;
+}
+
+
+.stylist-services ul{
+    color: #f0f0f0;/*color of list items*/
+    list-style: none;/*removes default list styles*/
+    padding: 0;/*remove default padding*/
+}
+
+.stylist-services li{
+    display: flex;/*use of flexbox for layout*/
+    justify-content: space-between;/*space between items evenly*/
+    width: 300px;/*width of list items*/
+    line-height: 2;/*line height*/
+}
+
+.stylist-services li span {
+    text-align: right;/*align text to the right*/
+}
+
+/*colorist section styling*/
+.color{
+    margin-left: 57%;/*margin left for positioning*/
+    color: #f0f0f0;/*text color*/
+    margin-top: -23%;/*top margin*/
+    position: relative;/*relative positioning*/
+}
+/*heading 2 styling*/
+.color h2{
+ font-family: "josefin",sans-serif;/*font family*/
+    color:whitesmoke;/*text color*/
+    font-size: 30px;/*font size*/
+    position: relative;/*relative positioning*/
+    border-bottom: 2px solid grey;/*grey border bottom*/
+    width: 50%;/*width*/
+    padding-bottom: 10px;}/*bottm padding*/
+
+/*heading 2 span styling*/
+.color h2 span{
+        color: grey; /*text color*/
+       font-size: 15px; /*font size*/
+        font-family: "Kaushan Script", cursive;/*font family*/
+    }
+
+
+.color ul{
+    color: #f0f0f0;/*text color*/
+    list-style: none;/*remove default list styles*/
+    padding: 0;}/*default padding removed*/
+ 
+    
+ .color  li{
+        display: flex;/*flexbox layout*/
+        justify-content: space-between;/*space between items*/
+        width: 330px;/*width*/
+        line-height: 2;/*line height*/
+    }
+/*span styling*/
+.color li span {
+        text-align: right;/*text aligned right*/
+    }
+/*end of color section*/
+
+/*color1 section styling*/
+.color1{
+        margin-left: 57%;/*left margin*/
+        color: #f0f0f0;/*text color*/
+        margin-top: 2%;/*top margin*/
+        position: relative;/*relative positioning*/
+    }
+/*color1 heading 2 styling*/
+.color1 h2{
+     font-family: "josefin",sans-serif;/*font family*/
+        color:whitesmoke;/*text color*/
+        font-size: 30px;/*font size*/
+        position: relative;/*relative positioning*/
+        border-bottom: 2px solid grey;/*grey border bottom*/
+        width: 50%;/*width*/
+        padding-bottom: 10px;}/*bottom padding  */
+    
+/*color1 heading 2span styling*/    
+.color1 h2 span{
+            color: grey; /*text color*/
+           font-size: 15px; /*font size*/
+            font-family: "Kaushan Script", cursive;/*font family*/
+        }
+    
+.color1 ul{
+        color: #f0f0f0;/*text color of list items*/
+        list-style: none;/*remove default list styles*/
+        padding: 0;}/*remove default padding*/
+       
+.color1  li{
+            display: flex;/*use flexbox for layput*/
+            justify-content: space-between;/*space between items evenly*/
+            width: 330px;/*width*/
+            line-height: 2;/*line height*/
+ }
+    
+.color1 li span {
+            text-align: right;/*text aligned right*/
+        }
+/*third colorist section styling*/
+.color2{
+   margin-left:20% ;/*left  margin*/
+  margin-top: -21%;/*top margin*/
+  position: relative;/*realtive positioning*/
+}
+/*.color2 heading 2 styling*/
+.color2 h2{
+    font-family: "josefin",sans-serif;/*font family*/
+    color:whitesmoke;/*text color*/
+    font-size: 30px; /*font size*/
+    position: relative;/*realtive positioning*/
+    border-bottom: 2px solid grey;/*grey border bottom*/
+    width: 25%;/*width*/
+    padding-bottom: 10px;/*padding bottom*/
+ }
+ /*.color2 heading 2 span styling*/     
+ .color2 h2 span{
+    color: grey; /*text color*/
+    font-size: 15px;  /*font size*/
+     font-family: "Kaushan Script", cursive;/*font family*/ 
+ }
+         
+         
+ .color2 ul{
+   color: #f0f0f0;/*text color*/
+    list-style: none;/*remove default list styles*/
+    padding: 0;/*remove default padding*/
+}       
+         
+.color2 li{
+    display: flex;/*flex box layout*/
+    justify-content: space-between;/*space between the items*/
+    width: 300px;/*width*/
+    line-height: 2;/*line height*/
+}         
+               
+.color2 li span {
+             text-align: right;/*text aligned right*/
+         }
+
+
+/*end of services page styling*/   
+
+/*stylist page */
+
+/*scrollbar styling for webkit browsers*/
+.body1::-webkit-scrollbar{
+    width: 10px;/*width of the scrollbar*/
+}
+/*scrollbar track styling*/
+.body1::-webkit-scrollbar-track{
+    background-color: #f0f0f0;/*background color*/
+}
+/*styling the scrollbar thumb*/
+.body1::-webkit-scrollbar-thumb{
+    background-color: black;/*black bg color*/
+    border-radius: 7px;/*rounded corners*/
+    border: 2px solid whitesmoke;/*border*/
+}
+/*hide the scrollbar button*/
+.body1::-webkit-scrollbar-button{
+    display: none;
+}
+
+/*header styling*/
+header{
+    position: relative;/*relative positioning*/
+    top: 0;/*top*/
+    left: 0;/*left*/
+    width: 100%;/*width*/
+    height: 10vh;/*height*/
+    display: flex;/*flexbox layout*/
+    justify-content: space-between;/*space between the items evenly*/
+    align-items: center;/*items aligned center*/
+    z-index: 1000;/*controls stacking order*/
+    padding: 5px 5%;/*padding*/
+    box-sizing: border-box;/*border boxing*/
+    background-color: whitesmoke;/*background color*/
+    
+}
+/*header unordered list styling*/
+header ul{
+    display: flex;/*flexbox styling*/
+    justify-content:flex-end;/*flex items at the end of the main axis*/
+    align-items:center ;/*align items in the center*/
+}
+
+header ul li{
+    list-style-type: none;/*remove default list item markers*/
+    margin-left: 30px;/*margin left*/
+}
+
+header ul li a{
+    text-decoration: none;/*remove underlines from links*/
+    padding: 3px 15px;/*padding*/
+    color: black;/*text color*/
+    font-size: 1.2vw; /*font size*/
+}
+
+/*header ul li  hover styling*/
+header ul li a:hover
+ { border-bottom: 3px solid black;/*border bottom*/
+ }
+/*border bottom for active link*/
+ header ul li .active{
+    border-bottom: 2px solid black;
+ }
+/*logo styling*/
+ header img{
+    width: 10%;/*width*/
+    height: auto;/*height*/
+    filter:brightness(100%) contrast(300%);/*filter*/
+}
+/*styling for the main container*/
+.half{
+    width: 100%;/*width*/
+    height: 90vh;/*height*/
+    background-color: whitesmoke;/*  background color*/
+    display: flex;/*flexbox layout  */
+    padding: 40px;/*padding*/
+    box-sizing: border-box;/* Includes padding and border in size */
+  
+}
+
+/* Styles for main heading */
+.half-content h1 {
+    color: black;/*text color*/
+    text-align: left; /*text aligned to the left*/
+    margin-left: 10%; /*left margin*/
+    margin-top: 15%;/*top margin*/
+    max-width: 80%;/*maximum width*/
+    font-size: 10vw;/*font size*/ 
+    font-family: "josefin", sans-serif;/*font family*/
+    z-index: 2;/*controls stacking order*/
+    position: relative;/*relative positioning*/
+}
+
+/*image positioning*/
+.image {
+    top: 14%;/* Set distance from the top */
+    left: 70%;/* Set distance from the left */
+    max-width: 100%;/* image doesn't exceed container width */
+    position: absolute; /* Position the image absolutely */
+    transform: translateX(-50%);  /* Center the image horizontally */
+}
+/*image styling*/
+.image img {
+    width: 100%; /* Ensures image fills its container */
+    height: auto;/* Maintains aspect ratio */
+    border-radius: 40px;/*rounded corners*/
+   
+}
+
+/*section1 styling*/
+.section1{
+    display:grid;/* grid layout*/
+    color: #f0f0f0;/*text color*/
+    opacity: 0;/* Initially hide section */
+    transition: all 3s;/*transition effect for smooth visibility*/
+}
+/*section1 image styling*/
+.section1 img{
+    align-items: left;/*align items*/
+    min-width: 40vh;/*minimum width*/
+    margin-left: 4%;/*left  margin */
+    margin-top: -6vw;/*top  margin */
+    border-radius: 7px;/*rounded corners*/
+
+}
+/*section1 heading styling*/
+.section1 h2{
+    margin-top: 7%;/*top  margin */
+    align-items: center;/*align items center*/
+    margin-left: 59vh;/*left  margin */
+    font-size: 2.5vw;/* font size*/
+    font-family:"josefin", sans-serif;/*use of font family josefin*/
+    border-bottom: 2px solid grey; /*bottom border*/
+    width: 30%;/* width*/
+    
+}
+/*section1 heading span styling*/
+.section1 h2 span{
+    color: grey; /*text color*/
+    font-size: 1vw;
+     font-family: "Kaushan Script", cursive;     
+ }
+
+
+.show{
+    opacity: 1;/*show element*/
+}
+
+/*section1 paragrapgh*/
+.section1 p{
+     text-align: center;
+    margin-left: 58vh;
+    width: 40vw;
+    margin-top: -30vh;
+    
+}
+/*end of section1 styling*/
+
+/*section2 styling*/
+
+.section2 {
+    display: grid;/*use of grid layout*/
+    color: #f0f0f0;
+    opacity: 0;/* Initially hide section */
+    transition: all 4s;/*smooth transittion effect*/
+    width: 100%;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 2vh; /* Spacing between grid items */
+}
+
+.show{
+    opacity: 1;/*show element*/
+}
+/*section2 image styling*/
+.section2 img {
+    max-width: 45vh; /*limit image width*/
+    border-radius: 7px;
+    justify-self: end; /*align image at the end of its grid cell*/
+    margin-top: -6vw;
+    margin-right: 4%;
+    display: flex;/*set display property to flex*/
+    max-width: 20%;
+}
+/*section2  heading*/
+.section2 h2 {
+    font-size: 2.5vw; 
+    font-family: "josefin", sans-serif;
+    border-bottom: 2px solid grey;
+    width: 30%;
+    margin-left:24%;
+    margin-top: 15vh; 
+    margin-bottom: 2vh;
+    display: flex;
+}
+/*section2  heading span*/
+.section2 h2 span {
+    font-size: 1vw; 
+    font-family: "Kaushan Script", cursive;
+    color: grey;
+}
+/*section2 paragraph styling*/
+.section2 p{
+    text-align: center;
+   margin-left: 24%;
+   width: 40%;
+   margin-top:-10%;
+   
+}
+/*end of section2 styling*/
+
+/*section 3 styling*/
+.section3{
+    display:grid;
+    color: #f0f0f0;
+    opacity: 0;
+    transition: all 3s;/*transition effect for smooth visibility*/
+}
+
+.show{
+    opacity: 1;/*show element*/
+}
+
+/*section 3 styling image*/
+.section3 img{
+    align-items: left;
+    min-width: 30vh;
+    margin-left: 4%;
+    margin-top: -6vw;
+    border-radius: 7px;
+
+}
+/*section 3 heading2 styling*/
+.section3 h2{
+    margin-top: 7%;
+    align-items: center;
+    margin-left: 59vh;
+    font-size: 2.5vw;
+    font-family:"josefin", sans-serif; ;
+    border-bottom: 2px solid grey;
+    width: 24%;
+    
+}
+/*section 3 heading2 span styling*/
+.section3 h2 span{
+    color: grey; 
+    font-size: 1vw;
+     font-family: "Kaushan Script", cursive;     
+ }
+
+
+/*section 3 heading2 paragraph styling*/
+.section3 p{
+     text-align: center;
+    margin-left: 55vh;
+    width: 45vw;
+    margin-top: -17vh;
+    
+}
+
+/*section 4 styling*/
+
+
+.section4 {
+    display: grid;
+    color: #f0f0f0;
+    opacity: 0;
+    transition: all 4s;
+    width: 100%;
+    grid-template-columns: 1fr; 
+    gap: 2vh; 
+}
+
+.show{
+    opacity: 1;/*show element*/
+}
+/*section 4 image styling*/
+.section4 img {
+    max-width: 30vh; 
+    border-radius: 7px;
+    justify-self: end; 
+    margin-top: -6vw;
+    margin-right: 4%;
+    display: flex;/*use of flexbox*/
+    max-width: 20%;
+}
+/*section 4 heading2*/
+.section4 h2 {
+    font-size: 2.5vw; 
+    font-family: "josefin", sans-serif;
+    border-bottom: 2px solid grey;
+    width: 30%;
+    margin-left:24%;
+    margin-top: 15vh; 
+    margin-bottom: 2vh;
+    display: flex;/*use of flexbox*/
+}
+/*section 4 heading2  span*/
+.section4 h2 span {
+    font-size: 1vw; 
+    font-family: "Kaushan Script", cursive;
+    color: grey;
+}
+/*section 4 paragrph styling*/
+.section4 p{
+    text-align: center;
+   margin-left: 24%;
+   width: 40%;
+   margin-top:-14%;
+   
+}
+
+/*section 5 styling*/
+
+.section5{
+    display:grid;/*use of grid layout*/
+    color: #f0f0f0;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.show{
+    opacity: 1;/*show element*/
+}
+
+/*section 5 image styling*/
+.section5 img{
+    align-items: left;
+    max-width: 25%;
+    margin-left: 4%;
+    margin-top: -6vw;
+    border-radius: 7px;
+
+}
+/*section 5 heading 2styling*/
+.section5 h2{
+    margin-top: 7%;
+    align-items: center;
+    margin-left:35%;
+    font-size: 2.5vw;
+    font-family:"josefin", sans-serif; 
+    border-bottom: 2px solid grey;
+    width: 30%;
+    
+}
+/*section 5 heading 2 span styling*/
+.section5 h2 span{
+    color: grey; 
+    font-size: 1vw;
+     font-family: "Kaushan Script", cursive;     
+ }
+
+/*section 5 paragrph styling*/
+.section5 p{
+     text-align: center;
+    margin-left: 67vh;
+    width: 45vw;
+    margin-top: -25%;
+    
+}
+
+/*section 6 styling*/
+
+.section6 {
+    display: grid;
+    color: #f0f0f0;
+    opacity: 0;
+    transition: all 4s;
+    width: 100%;
+    grid-template-columns: 1fr; 
+    gap: 2vh; 
+}
+
+.show{
+    opacity: 1;/*show element*/
+}
+/*section 6 image styling*/
+.section6 img {
+    max-width: 30vh; 
+    border-radius: 7px;
+    justify-self: end; 
+    margin-top: -6vw;
+    margin-right: 4%;
+    display: flex;
+    max-width: 20%;
+}
+/*section 6 heading  styling*/
+.section6 h2 {
+    font-size: 2.5vw; 
+    font-family: "josefin", sans-serif;
+    border-bottom: 2px solid grey;
+    width: 30%;
+    margin-left:26%;
+    margin-top: 13vh; 
+    margin-bottom: 2vh;
+    display: flex;
+}
+/*section 6 heading span  styling*/
+.section6 h2 span {
+    font-size: 1vw; 
+    font-family: "Kaushan Script", cursive;
+    color: grey;
+}
+/*section 6 paragraph styling*/
+.section6 p{
+    text-align: center;
+   margin-left: 24%;
+   width: 40%;
+   margin-top:-10%;
+   
+}
+
+
+/*footer section styling*/
+footer{
+    background-color: #222;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    
+
+}
+/*flexbox for footer content*/
+.footer-section{
+    align-items: center;/*align items vertically*/
+    display: flex;/*flexbox layout*/
+    justify-content: center;/*center horizontally*/
+    
+    
+}
+/*styling for footer column heading*/
+.footer-column h3{
+    font-family:"Josefin Sans", sans-serif ;
+    font-size: 25px;
+    
+    
+}
+/*footer column styling*/
+.footer-column{
+    flex: 1;/*allows column to grow gradually*/
+}
+/*footer column paragraph styling*/
+.footer-column p{
+    line-height: 1.5;
+    font-size: 17px;
+   
+}
+/*social media heading styling*/
+.social-media h3{
+    font-family:"Josefin Sans", sans-serif ;
+    font-size: 25px;
+    margin-top: -10%;
+    
+   
+}
+/*social media section styling*/
+.social-media {
+    flex: 1;
+
+}
+/*website section styling*/
+.website{
+    flex: 1;/*allows website section to grow gradually*/
+}
+/*anchor tags styling*/
+.website a ,.social-media a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*hover effects*/
+.website a:hover ,.social-media a:hover{
+    text-decoration: underline;
+
+}
+/*copyright paragraph styling*/
+.copyright p{
+    font-size: 14px;
+    text-align: center;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+/*End of stylist page*/
