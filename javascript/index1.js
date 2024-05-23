@@ -1,11 +1,11 @@
 
 
-// Function to handle the scroll event for multiple sections
+// function to handle the scroll event for multiple sections
 function handleScroll(sections){
     window.addEventListener('scroll' , () => {
-        //iterate over each section
+        //Iterate over each section
         sections.forEach(section => {
-            //select all elements within the current selection
+            //Select all elements within the current selection
             const elements = document.querySelectorAll(section);
             // Iterate over each element within the section
             elements.forEach(el => {
