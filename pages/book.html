@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Book a visit</title>
+     <!--link to css-->
+     <link rel="Stylesheet" type="text/css" href="../css/style.css">
+     <!--link to favicon-->
+     <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+
+</head>
+<body>
+   <!--header section with logo-->
+    <header class="logo">
+       <a href="Home.html"><!--link to homepage-->
+        <img src ="../img/barrow.png"  alt="barrow salon logo" ><!--salon logo-->
+       </a>
+    </header>
+    <!--End of header section-->
+
+    <!--heading-->
+    <h2>Book an Appointment</h2>
+
+    <!--appointment booking form-->
+    <form class="appointment">
+    
+       <!--first name input field-->
+    <div>
+      <label for="name2">First Name:</label> <!--label for first name-->
+        <input type="text" id="name2" name="name2"><!--input field for first name-->
+    </div>
+     <!--End of first name input field-->
+
+    <br><!--link break-->
+
+     <!--last name input field-->
+      <div>
+        <label for="name3">Last Name:</label><!--label for last name -->
+        <input type="text" id="name3" name="name3"><!--input field for last name-->
+      </div>
+      <!--End of last name input field-->
+
+      <br><!--link break-->
+
+      <!-- Phone number input field -->
+      <div>
+      <label for="phone">Phone Number:</label><!--label for Phone number -->
+      <input type="text" id="phone" name="phone"><!--input field for Phone number-->
+      </div>
+        <!--End of phone number input field -->
+
+      <br><!--link break-->
+
+      <!-- email input field -->
+      <div>
+        <label for="Em">Email:</label><!--label for email -->
+        <input type="email" id="Em" name="Em"><!--input field for email-->
+      </div>
+   <!--End of email input field -->
+
+      <br><!--link break-->
+
+    <!-- Appointment Date input field -->
+      <div>
+        <label for="date">Appointment Date:</label><!--label for Appointment Date -->
+        <input type="date" id="date" name="date"><!--input field for  Appointment Date -->
+      </div>
+  <!--End of Appointment Date input field -->
+      <br><!--link break-->
+
+      <!-- Preferred Time input field --> 
+      <div>
+        <label for="time">Preferred Time:</label><!--label for Preferred Time -->
+        <input type="time" id="time" name="time"><!--input field for Preferred Time -->
+      </div>
+<!--End of  Preferred Time input field --> 
+      <br><!--link break-->
+
+      <div><!--requested service dropdown menu-->
+        <label for="service">Requested Service:</label><!--label for service dropdown -->
+       <select id="service" name="service"> <!-- Dropdown menu for selecting a service -->
+        <option value="Haircut">Haircut</option><!--haircut option-->
+        <option value="Blow Dry">Blow Dry</option><!--Blow Dry option-->
+        <option value="Color Blowdry">Color Blowdry</option><!--Color Blowdry option-->
+        <option value="Updo">Updo</option><!--Updo option-->
+        <option value="Wigs">Wigs</option><!--Color Blowdry option-->
+        <option value="Hair Color">Hair Color</option><!--Wigs option-->
+        <option value="Hightlights">Hightlights</option><!--Hightlights option-->
+     </select>
+      </div>
+      <!--End of requested service dropdown menu-->
+        <br><!--link break-->
+        <input type="submit" value="submit"><!--submit button-->
+    </form>
+    <!--End of  appointment booking form-->
+</body>
+</html>
