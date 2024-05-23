@@ -656,7 +656,7 @@ footer{
 }
 /*website section styling*/
 .website{
-    flex: 1;/*allows website section to grow gradually*/
+    flex: 1;/*Allows website section to grow gradually*/
 }
 /*anchor tags styling*/
 .website a ,.social-media a{
