@@ -1,0 +1,641 @@
+
+/*Home page styling*/
+
+/*scrollbar styling for webkit browsers*/
+body::-webkit-scrollbar{
+    width: 10px;/*width of the scrollbar*/
+}
+
+/*background color of the scrollbar*/
+body::-webkit-scrollbar-track{
+    background-color: #f0f0f0;
+}
+
+/*styling the scrollbar thumb*/
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 7px;
+    border: 2px solid whitesmoke;
+}
+
+/*hide the scrollbar button*/
+body::-webkit-scrollbar-button{
+    display: none;
+}
+
+/*body styling*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;/*bg color*/
+   
+}
+/*header styling*/
+header{
+    position: fixed;/*header position fixed at the top*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 5px 5%;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.9s ease;
+}
+
+/*background color is black when scrolled*/
+.header-black{
+    background-color: #030303;
+}
+
+/*logo styling*/
+header img{
+    width: 90px;
+    height: auto;
+    filter:brightness(300%) contrast(300%);
+}
+/*navigation styling in the header*/
+header ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center ;
+}
+
+header ul li{
+    list-style-type: none;/*removes bullet points*/
+    margin-left: 30px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 3px 15px;
+    color: white;
+    font-size: 1.2vw; 
+
+}
+
+/*Transition for logo and navigation*/
+header img,
+header ul li a{
+    transition: padding 0.7s ease;
+}
+
+/*right padding for logo when scrolled*/
+.header-black img{
+    padding-right:20px ;
+}
+
+/*padding for links when scrolled*/
+.header-black ul li a{
+    padding:4px 15px ;
+}
+
+/*border at the bottom when hovered*/
+ header ul li a:hover
+ 
+ {
+     border-bottom: 3px solid white;
+   
+ }
+
+ /*border for active link*/
+ header ul li .active{
+    border-bottom: 2px solid white;
+ }
+
+/*image styling*/
+.pic{
+    position: relative;
+}
+
+.pic img{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+/*styling for centered content overlay*/
+.over{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    color: #f0f0f0;
+    display: flex;
+    position:relative;
+    top: -500px;
+}
+
+/*styling for heading*/
+.over h1{
+    font-size:50px;
+    font-family:600 ;
+    color:#f0f0f0;
+    font-family: "Cinzel", serif;
+    font-style: normal;
+}
+/*opacity of the background image*/
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82.4%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*content positioning*/
+.content{
+    position: relative;
+    z-index: 2;
+} 
+
+
+/*button styling*/
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    top: -400px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/*button styling on hover*/
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn a{
+    text-decoration: none;/*removes underline from links*/
+    color: inherit;/*inherits color from the parent*/
+}
+
+/*about section styling*/
+.about{
+    padding:50px 0 ;
+    text-align: center;
+    position: relative;
+    top: -160px;
+}
+/*about heading2 styling*/
+.about h2{
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 4%;
+   font-family:"Josefin Sans", serif; ;
+}
+/*about paragraph styling*/
+.about p{
+    font-size:20px ;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 auto;
+    max-width: 900px;
+   
+}
+
+/*styling of services section*/
+.services{
+    background-color: #f0f0f0;/*background color*/
+    color:black;
+    padding: 120px;
+    transition: background-color 3s ease;
+}
+
+/*black bg on scroll*/
+.black-bg{
+    background-color: #030303!important;
+    color: #f0f0f0;
+    
+}
+.service {
+    width: 40%; /*width of each service item*/
+    text-align: center;/*text aligned to center*/
+    flex-direction: column;/*column layout*/
+}
+
+.services {
+    position: relative;/*relative position*/
+    display: flex;/*flexbox layout*/
+    justify-content: space-between;/*space between styling*/
+    
+}
+/*services heading2 styling*/
+.services h2{
+    position: absolute;/*absolute positioning*/
+    top: 0;
+    text-align: center;
+    margin: 20px auto 0;
+    margin-left:33% ;
+    font-size: 45px;
+    font-family:"Josefin Sans", serif; 
+}
+
+/*services images styling*/
+.service img{
+    width: 70%; 
+    height: 300px; 
+    object-fit: cover; 
+    opacity: 0.5; 
+}
+
+/*overlay styling on services images*/
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*text positioning within overlay*/
+.text1{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform:translate(-50%,-50%) ;
+    color: #fff;
+    padding:10px ;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    color: #fff;
+    padding:10px ;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.text3{
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform:translate(-50%,-50%) ;
+    color: #fff;
+    padding:10px ;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*styling of services button*/
+.button{
+   background-color: transparent;
+   text-align: center;
+   top: 10%;
+   color: #fff;
+   text-decoration: none;
+   border: 2px solid white;
+   padding: 15px 32px;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    right: 99%;
+}
+/*bg color white on hover*/
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button a{
+    text-decoration: none;/*removes underline from links*/
+    color: inherit;/*color inherit from the parent*/
+   
+}
+
+
+
+
+/*sliding text*/
+.sliding-text{
+    position: relative;/*relative positioning*/
+    overflow: hidden;/*overflow hidden*/
+    width: 100%;/*full width*/
+    height: 50px;/*height of the container*/
+    margin-top: 6%;/*top margin*/
+}
+
+/*text styling*/
+.text{
+    position: absolute;/*absoloute positioning*/
+    white-space: nowrap;/*prevents text from wrapping*/
+    animation: moveText 10s linear infinite ;/*animation for text sliding*/
+    z-index: 2;/*above other contents*/
+    font-size: 30px;/*size of the font*/
+    font-family: "Josefin Sans", sans-serif;/*font family of text*/
+    font-weight: 400;/*weight of the font*/
+}
+
+/*keyframe for sliding text animation*/
+@keyframes moveText {
+    0%{
+        transform:translateX(-100%) ;/*start outside the container*/
+    }
+    100%{
+        transform: translateX(calc(100% + 100vw));/*moves across the container*/
+    }
+}
+
+/*stylist section*/
+.stylist {
+    text-align: center;/*text aligned to center*/
+    margin-top: 7%;/*top margin*/
+}
+/*stylist heading styling*/
+.stylist h2 {
+    text-align: left;/*h2 aligned to left*/
+    margin-top: 4%;/*top margin*/
+    font-size: 35px;/*font size*/
+    margin-left: 2%;/*left margin*/
+    color: #333;/*text color*/
+    font-family: "Josefin Sans", sans-serif;/*font family*/
+}
+
+/*styling paragraph styling*/
+.stylist p {
+    text-align: left;/*paragrapgh aligned to left*/
+    margin-left: 2%;/*left margin*/
+    font-size: 20px;/*font size*/
+    max-width: 28%;/*maximum width*/
+    color: #666;/*text color*/
+    
+}
+/*card-container styling*/
+.card-container {
+    display: flex;/*flexbox layout*/
+    justify-content: space-around;/*space around the items*/
+    margin-top: -235px;/*top margin*/
+    margin-left: 27%;/*left margin*/
+    
+}
+/*each card styling*/
+.card {
+      overflow: hidden;/*overflow hidden*/
+     margin: 0 15px;/*horizontal margin*/
+ 
+   
+}
+/*card image styling*/
+.card img {
+    width: 70%;
+    height: 50%;
+   
+}
+/*card content styling*/
+.card-content {
+    padding: 20px;/*padding inside the card*/
+    width: 300%;/*width of the card content*/
+}
+
+/*card heading styling*/
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: -1%;
+   
+}
+
+/*card paragraph styling*/
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;/*space between the sentences*/
+   
+}
+
+
+/*reviews section styling*/
+.reviews h2{
+    font-family: "Josefin Sans",sans-serif;/*font family*/
+    color: #333;/*color of the heading*/
+    font-size: 35px;/*font size*/
+    margin-top: 8%;/*top margin*/
+    margin-bottom: 4%;/*bottom margin*/
+}
+/*slideshow container styling*/
+.slideshow-container{
+    position: relative;/*realtive positioning*/
+}
+
+.myslides{
+    display:none ;/*hidden*/
+    padding: 40px;/*padding inside the slide*/
+    text-align: center;/*centered text*/
+    width: 70%;/*width of the slide*/
+    margin: 0 auto;/*center horizontally*/
+    color: #666;/*color of the text*/
+}
+
+.myslides:first-child{
+    display: block;/*display the first slide*/
+}
+
+/*wrapper for slideshow and navigation buttons*/
+.slideshow-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    position: relative;
+}
+
+/*navigation buttons container*/
+.nav-buttons{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    position:absolute ;
+    top: 50%;/*center vertically*/
+    transform: translateY(-50%);
+    pointer-events:none ;/*allow clicks to pass through the slides*/
+}
+
+/*navigation buttons styling*/
+.nav-buttons .prev, .nav-buttons .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    border-radius:3px ;
+    user-select: none;/*prevents text selection*/
+    pointer-events:all ;/*allow clicking on the buttons*/
+    color: whitesmoke;
+    background-color: #030303;
+    
+}
+.nav-buttons .prev:hover, .nav-buttons .next:hover{
+    background-color: rgba(0, 0 , 0, 0.8);
+}
+
+/*responsive adjustment for smaller screen*/
+@media(max-width:768px){
+    .nav-buttons .prev, .nav-buttons .nex{
+        padding: 12px;
+        font-size:14px ;
+        top:60% ;
+    }
+}
+
+
+/*footer styling*/
+footer{
+    background-color: #030303;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative; /*relative positioning*/
+    
+
+}
+/*flexbox for footer content*/
+.footer-section{
+    align-items: center;/*align items vertically*/
+    display: flex;/*flexbox layout*/
+    justify-content: center;/*center horizontally*/
+    
+    
+}
+/*styling for footer column heading*/
+.footer-column h3{
+    font-family:"Josefin Sans", sans-serif ;
+    font-size: 25px;
+    
+    
+}
+/*footer column styling*/
+.footer-column{
+    flex: 1;/*allows column to grow gradually*/
+}
+/*footer column paragraph styling*/
+.footer-column p{
+    line-height: 1.5;/*line height*/
+    font-size: 17px;
+   
+}
+/*social media heading styling*/
+.social-media h3{
+    font-family:"Josefin Sans", sans-serif ;
+    font-size: 25px;
+    margin-top: -10%;
+    
+   
+}
+/*social media section styling*/
+.social-media {
+    flex: 1;/*allow social-media section to grow gradually*/
+}
+/*website section styling*/
+.website{
+    flex: 1;/*allowwebsite section to grow gradually*/
+}
+/*anchor tags styling*/
+.website a ,.social-media a{
+    color: #f0f0f0;
+    text-decoration: none;/*removes default underline*/
+    font-size: 20px;
+}
+/*hover effects*/
+.website a:hover ,.social-media a:hover{
+    text-decoration: underline;
+
+}
+/*copyright paragraph styling*/
+.copyright p{
+    font-size: 14px;
+    text-align: center;
+    align-self: flex-end;/*align to the bottom of the container*/
+    position: absolute;/*absolute positioning*/
+    bottom: 10px; /*distance from the bottom*/
+    left: 50%;/*position horizontally at 50%*/
+    transform: translateX(-50%);}/*centers horizontally*/
+
+
+
+/*end of home page styling*/
+
+
+/*Book now page styling*/
+/*heading styling*/
+h2{
+    text-align: center;/*text align center*/
+    margin-top: 4%;/*top margin*/
+    font-size: 30px;/*font size*/
+
+}
+/*styling for logo images*/
+.logo img{
+    margin-top: 0;/*reset top margin*/
+    left: 0;/*align margin to the left*/
+    filter: brightness(100%);/*added brightness filter*/
+
+}
+
+/*appointment form styling*/
+.appointment{
+    max-width: 500px;/*maximum width*/
+    margin: 0 auto;/*center the form horizontally*/
+    padding: 20px;/*padding*/
+    border-radius: 10px;/*rounded corners*/
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.3);/*box shadow*/
+    margin-top: 5%;/*top margin*/
+    background-color: #f0f0f0;/*bg color*/
+}
+/*styling for form labels*/
+.appointment label{
+    display:inline-block;/*display labels inline*/
+    width: 130px;/*width of labels*/
+}
+
+/*styling for form inputs*/
+#name2,
+#name3,
+#phone,
+#Em,
+#date,
+#time,
+#service{
+    width: calc(80% - 110px); /*set width for inputs*/
+    padding: 8px;/*padding*/
+    display: inline-block;/*display in line*/
+    border: 1px solid #030303;/*border*/
+    border-radius: 5px;/*rounded corners*/
+    box-sizing: border-box;/*includd padding and border in width*/
+    
+   
+}
+/*styling for submit button*/
+input[type= submit]{
+    width: 20%;/*width of button*/
+    color: whitesmoke;/*color of the text*/
+    padding: 10px ;/*padding*/
+    margin: 20px auto;/* margin*/
+    display: block; /*display block*/
+    background-color:black ;
+    
+    
+}
+
+/*end of book now page styling*/
